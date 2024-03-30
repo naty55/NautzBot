@@ -25,7 +25,6 @@ async def nautz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def get_token() -> str:
     token = os.environ.get("bot_token")
-    print(token)
     if not token or len(token) <= 0:
         logger.critical("bot_token is not set")
         exit()
