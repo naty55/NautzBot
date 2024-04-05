@@ -15,7 +15,8 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 keywords =("קישור", 
            "לינק",
-           "קבוצה של")
+           "קבוצה של",
+          "קבוצה ל")
 regex = '|'.join(keywords)
 
 async def nautz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
